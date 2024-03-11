@@ -1,0 +1,20 @@
+body {
+    background-image: url(../images/ant_colony.jpg);
+}
+
+.div-css {
+    background-color: cornflowerblue;
+    width: 535px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px; 
+}
+
+.div-break {
+    border-color: black;
+    border-style: dotted;
+    width: 510px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px; 
+}

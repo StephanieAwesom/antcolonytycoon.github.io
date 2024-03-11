@@ -1,0 +1,9 @@
+body {
+    background-image: url(../images/ganum\ stle.png);
+}
+
+a {
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 10px; 
+}

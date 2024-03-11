@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="header">Insert Colony Name</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="div-css">
+        <input type="checkbox" id="checkbox-enter-name" onclick="hide_show_div('checkbox-enter-name', 'colony-name')"> Hide / Show 'Enter Name'
+    
+        <div id="colony-name" class="div-break">
+            <p>Enter Your Colony Name:</p>
+            <input type="text" id="colony-name-input">
+            <button onclick="submit_colony_name()">Submit</button>
+        </div>
+    
+        <br>
+
+        <div class="div-break">
+            <p>Select a resource:</p>
+            <input type="radio" name="select-resource" value="leaf"> Leaf
+            <input type="radio" name="select-resource" value="crumb"> Crumb
+            <input type="radio" name="select-resource" value="stick"> Stick
+            <input type="radio" name="select-resource" value="pebble"> Pebble
+            <button onclick="gather_resource()">Gather Resource</button>
+            <p id="gather-resource-text">placeholder</p>
+        
+            <br>
+            
+            <button onclick="tame_ant()">Tame Ant (Cost 5 Leaves)</button>
+            <p id="tame-ant-text">placeholder</p>
+        
+            <br>
+        
+            <select id="select-job">
+                <option value="chef">Chef (Cost 5 Crumbs & An Ant)</option>
+                <option value="lumberjack">Lumberjack (Cost 5 Sticks & An Ant)</option>
+                <option value="miner">Miner (Cost 5 Pebbles & An Ant)</option>
+            </select>
+            <button onclick="hire_ant()">Hire Ant</button>
+            <p id="hire-ant-text">placeholder</p>
+            <button onclick="manual_labour()">Put Ants To Work</button>
+            <p id="manual-labour-text">placeholder</p>
+        </div>
+    
+        <br> <br>
+    
+        <input type="checkbox" id="checkbox-statistics" onclick="hide_show_div('checkbox-statistics', 'statistics')"> Hide / Show Statistics
+        <div id="statistics" class="div-break">
+            <p id="statistics-total-resources">🧰 Total Resources - 0</p>
+            <ul>
+                <li id="statistics-leaves">🍃 Leaves - 0</li>
+                <li id="statistics-crumbs">🍞 Crumbs - 0</li>
+                <li id="statistics-sticks">🌳 Sticks - 0</li>
+                <li id="statistics-pebbles">🪨 Pebbles - 0</li>
+            </ul>
+    
+            <p id="statistics-total-ants">🐜 Total Ants - 0</p>
+            <ul>
+                <li id="statistics-unemployed">🧍‍♂️ Unemployed Ants - 0</li>
+                <li id="statistics-chefs">👨‍🍳 Chef Ants - 0</li>
+                <li id="statistics-lumberjacks">🪓 Lumberjack Ants - 0</li>
+                <li id="statistics-miners">⛏️ Miner Ants - 0</li>
+            </ul>
+    
+            <p id="statistics-ant-dollars">💰 Ant Dollars - 0</p>
+        </div>
+
+        <br> <br>
+    
+        <button onclick="win_game()">Victory Royale (Cost 10,000 Ant Dollars)</button>
+    </div>
+    <script src="js/ant-code.js"></script>
+</body>
+</html>
